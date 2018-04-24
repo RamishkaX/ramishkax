@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-
-
 <html>
+<head>
+	<meta charset="utf-8">
+	<title>Сайт с JS</title>
+	<!--<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script defer type="module" src="js/client.js"></script>
+  	<script defer type="module" src="js/main.js"></script>
+</head>
+<body>
 
-	<head>
-		<link href="if_In-yang_132767.png" rel="shortcut icon">
-		<meta charset="utf-8">
-		<meta name="description" content="Хороший сайт">
-		<meta name="keywords" content="Хороший сайт">
-		<meta name="author" content="Рамин и Матвей">		
-		<title>Душевная молодость в нашей душе ононошневней</title>
-		<link href="main.css" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<div id="veko1" class="vekoo"></div>
-		<div id="veko2" class="vekoo"></div>
-		<div id="veko3" class="vekoo"></div>
-		<div id="veko4" class="vekoo"></div>
-		<img id="sharingan" class="shar" src="941bc97d-8c4e-4cb2-92bf-361d8f07a6a7.jpg">
-		<img id="sharingan2" class="shar" src="941bc97d-8c4e-4cb2-92bf-361d8f07a6a7.jpg">
-		<div id="popup" style="display: none">
-			<h3>Ты че нажал то?!?!))))</h3>
-			<img id="but" class="shar" src="55.png">
+	<main id="posts">
+		
+		<div v-if="posts.length > 0">
+		
+			<div class="posts" v-for="post in posts">
+			
+				<h2 class="title">#{{ post.id }} {{ post.title }}</h2>
+				<p class="text">{{ post.body }}</p>
+				<div class="author">{{ post.user.name }}</div>
+
+				<div class="comments">
+					<div v-if="post.comments.length > 0">
+						<div v-if="post.comments.length > 1">{{ post.comments.length }} comments:</div>
+						<h3 v-else>comment:</h3>
+					<div v-for="comment in post.comments">
+						<div class="com-name">{{ comment.name }}</div>
+						<div class="com-email">{{ comment.email }}</div>
+						<div class="com-comment">{{ comment.body }}</div>
+					</div>
+					</div>
+					<div v-else>
+          				<h3>no comments</h3>
+       				 </div>
+				</div>
+
+			</div>
+
 		</div>
-		<img id="tc" src="http://animechan.ru/uploads/posts/2014-04/1396955945_tumblr_mlaex5rljr1qao0ygo1_r1_500.gif">
-		<div id="button">
-			<h3>Нажми меня)))))</h3>
-		</div>
-		
-		<div id="black"></div>
-		
-		
-		<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js.js"></script>
-	</body>
-
-
+	</main>
+	
+</body>
 </html>
