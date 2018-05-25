@@ -1,45 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Сайт с JS</title>
-	<!--<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">-->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	<script defer type="module" src="js/client.js"></script>
-  	<script defer type="module" src="js/main.js"></script>
-</head>
-<body>
-
-	<main id="posts">
-		
-		<div v-if="posts.length > 0">
-		
-			<div class="posts" v-for="post in posts">
-			
-				<h2 class="title">#{{ post.id }} {{ post.title }}</h2>
-				<p class="text">{{ post.body }}</p>
-				<div class="author">{{ post.user.name }}</div>
-
-				<div class="comments">
-					<div v-if="post.comments.length > 0">
-						<div v-if="post.comments.length > 1">{{ post.comments.length }} comments:</div>
-						<h3 v-else>comment:</h3>
-					<div v-for="comment in post.comments">
-						<div class="com-name">{{ comment.name }}</div>
-						<div class="com-email">{{ comment.email }}</div>
-						<div class="com-comment">{{ comment.body }}</div>
-					</div>
-					</div>
-					<div v-else>
-          				<h3>no comments</h3>
-       				 </div>
-				</div>
-
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Web - студия WWW закажите сайт и не пожалеете">
+		<meta name="keywords" content="Сайты, веб, студия, заказать, сайт">
+		<meta name="author" content="Ramin">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Web - студия "WWW"</title>
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/style-mobile.css">
+	</head>
+	<body>
+		<header>
+			<a href="index.html">
+				<img src="assets/logo.png" class="logo img-responsive">
+			</a>
+			<img class="img-responsive burger" src="assets/if_List_Text_Menu_Numbers_String_Burger_1329080.png">
+			<ul class="list-inline header-ul">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="pages/about.html">О компании</a></li>
+				<li><a href="pages/news.html">Новости</a></li>
+			</ul>
+		</header>
+		<section class="text-slide">
+			<h1 class="text-center">Веб-Студия "WWW"</h1>
+			<h3 class="text-center">Что смотришь? Заказывай</h3>
+		</section>
+		<section class="about">
+			<h2 class="text-center">О нас</h2>
+			<p>Профессиональный и ответственный подход к формированию фирменного стиля – наше главное преимущество. Мы отлично понимаем, что это важнейшая составляющая успеха вашей фирмы; поэтому никогда не отступаем, а прорабатываем множество вариантов логотипов, слоганов и стилистических решений. Дизайнеры учтут все тонкости и нюансы; в процессе разработки мы постоянно ведём консультации с заказчиком. Только так можно создать уникальный логотип, привлекательный фирменный дизайн и запоминающийся слоган. Все эти элементы будут отражать специфику вашей компании и соответствовать актуальным тенденциям сферы бизнеса. Окончательный проект логотипа фирменного стиля – это результат работы целой команды специалистов. Профессиональная команда веб-студии "WWW" с удовольствием поможет вам при помощи информационных и визуальных средств подчеркнуть индивидуальность организации, сформировать к ней дружественное отношение, выделить нужные для позиционирования ассоциации.</p>
+		</section>
+		<section class="why-we">
+			<h2 class="text-center">Почему мы?</h2>
+			<div class="advant text-center">
+				<img src="assets/if_23_Page_Rank_Badge_1688850.png">
+				<h3>Только качественная верстка</h3>
 			</div>
+			<div class="advant text-center">
+				<img src="assets/if_money_299107.png">
+				<h3>Низкие цены</h3>
+			</div>
+			<div class="advant text-center">
+				<img src="assets/if_money-pig-heart_2903200.png">
+				<h3>Бесплатный адаптивный дизайн</h3>
+			</div>
+			<div class="advant text-center">
+				<img src="assets/if_lock_51925.png">
+				<h3>Уникальный дизайн</h3>
+			</div>
+		</section>
+		<section class="form">
+			<h2 class="text-center">Оставить заявку</h2>
+			<div class="form-cont">
+				<form method="GET">
+					<input type="text" name="name" placeholder="*Имя" required>
+					<input type="text" name="lastname" placeholder="*Фамилия" required>
+					<input type="email" name="email" placeholder="E-mail">
+					<input type="tel" name="tel" placeholder="*Телефон" required pattern="7[0-9]{10}">
+					<button type="submit">Отправить</button>
+				</form>
+			</div>
+		</section>
+		<footer>
+			<ul class="list-inline footer-ul">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="pages/about.html">О компании</a></li>
+				<li><a href="pages/news.html">Новости</a></li>
+			</ul>
 
-		</div>
-	</main>
-	
-</body>
+			<a href="index.html"><img src="assets/logo.png" class="logo img-responsive"></a>
+			<b>WWW 2018</b>
+		</footer>
+		<script type="text/javascript" src="scripts/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="scripts/burger.js"></script>
+	</body>
 </html>
