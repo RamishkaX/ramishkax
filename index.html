@@ -7,20 +7,33 @@
 		<meta name="author" content="Ramin">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Web - студия "WWW"</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
 		<link rel="stylesheet" type="text/css" href="styles/style-mobile.css">
 	</head>
 	<body>
+		<div class="popup">
+			<div class="close">X</div>
+			<h3 class="text-center">Введите свой номер</h3>
+			<form method="GET">
+				<input type="text" name="tel">
+				<button type="submit">Отправить</button>
+			</form>
+		</div>
 		<header>
 			<a href="index.html">
 				<img src="assets/logo.png" class="logo img-responsive">
 			</a>
 			<img class="img-responsive burger" src="assets/if_List_Text_Menu_Numbers_String_Burger_1329080.png">
+			<div class="call-me">Позвоните мне!</div>
 			<ul class="list-inline header-ul">
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="pages/about.html">О компании</a></li>
+				<li><a href="pages/portfolio.html">Портфолио</a></li>
+				<li><a href="pages/technology.html">Технологии</a></li>
 				<li><a href="pages/news.html">Новости</a></li>
 			</ul>
+
 		</header>
 		<section class="text-slide">
 			<h1 class="text-center">Веб-Студия "WWW"</h1>
@@ -65,6 +78,8 @@
 			<ul class="list-inline footer-ul">
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="pages/about.html">О компании</a></li>
+				<li><a href="pages/portfolio.html">Портфолио</a></li>
+				<li><a href="pages/portfolio.html">Технологии</a></li>
 				<li><a href="pages/news.html">Новости</a></li>
 			</ul>
 
@@ -73,5 +88,6 @@
 		</footer>
 		<script type="text/javascript" src="scripts/jquery-1.10.2.js"></script>
 		<script type="text/javascript" src="scripts/burger.js"></script>
+		<script type="text/javascript" src="scripts/popup.js"></script>
 	</body>
 </html>

@@ -1,4 +1,26 @@
 @media (max-width: 767px) {
+
+	.map {
+		width: 100%;
+	}
+
+	.tech {
+		width: 100%;
+		float: left;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	.popup {
+		width: 90%;
+	}
+
+	.call-me {
+		margin-left: 0;
+		margin-right: 30px;
+		margin-top: 24px;
+	}
+
 	.burger {
 		display: block;
 	}
