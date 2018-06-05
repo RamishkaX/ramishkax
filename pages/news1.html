@@ -36,58 +36,29 @@
 		</header>
 		<section class="news-section">
 			<h2 class="text-center">Новости</h2>
-			<div class="nn">
-				<div class="news-block" id="n1">
-				<div class="date">10.04.2018</div>
-				<a href="news2.html"><h4>В связи с наступлением весны, всем скидка 15%!</h4></a>
-				<p>Ура, Друзья! Наступила весна! Спешите! Заказав сайт тоолько на этой неделе, вам будет скидка 15%.</p>
-				<div class="news-foot">
-					<div class="comment" onclick="opencom('c1');">Комментарии (<span id="s1">1</span>)</div>
-					<div class="author">Ramin</div>
-				</div>
-				<div class="c1">
-					<div class="comment-block">
-						<img class="img-responsive" src="../assets/if_user-alt_285645.png">
-						<div class="us-name">Матвей Факел</div>
-						<p>Отличная новость! Обожаю вас</p>
-					</div>
-				</div>
-				
-			</div>
-			<!--<div class="ad-com">
-				<div class="ad-tit">Добавить комментарий</div>
-					<form>
-						<input type="text" id="name1" name="name" placeholder="*Имя" required>
-						<textarea name="text" id="text1" placeholder="*Текст" required></textarea>
-						<a href="javascript://" onclick="add('n1');">Отправить</a>
-					</form>
-			</div>-->
-			</div>
-			<div class="nn">
+			<div>
 				<div class="news-block" id="n2">
 				<div class="date">10.04.2018</div>
-				<a href="news1.html"><h4>У нас новый дизайнер!</h4></a>
-				<p>Она удивит вас своим творчеством, мы вам гарантируем. Современные дизайны, красивые подходы к вашим задачам</p>
+				<a href="#"><h4>У нас новый дизайнер!</h4></a>
+				<p>Она удивит вас своим творчеством, мы вам гарантируем. Современные дизайны, красивые подходы к вашим задачам. Она удивит вас своим творчеством, мы вам гарантируем. Современные дизайны, красивые подходы к вашим задачам</p>
 				<div class="news-foot">
-					<div class="comment" onclick="opencom('c2');">Комментарии (<span id="s2">1</span>)</div>
+					<div class="comment">Комментарии (<span id="s2">1</span>)</div>
 					<div class="author">Ramin</div>
 				</div>
-				<div class="c2">
 					<div class="comment-block">
 						<img class="img-responsive" src="../assets/if_user-alt_285645.png">
 						<div class="us-name">Матвей Факел</div>
 						<p>Отличная новость! Дизайнер супер.</p>
 					</div>
-				</div>
 			</div>
-			<!--<div class="ad-com">
+			<div class="ad-com">
 					<div class="ad-tit">Добавить комментарий</div>
 					<form>
-						<input type="text" id="name2" name="name" placeholder="*Имя" required>
-						<textarea name="text" id="text2" placeholder="*Текст" required></textarea>
+						<input type="text" id="name" name="name" placeholder="*Имя" required>
+						<textarea name="text" id="text" placeholder="*Текст" required></textarea>
 						<a href="javascript://" onclick="add('n2');">Отправить</a>
 					</form>
-				</div>-->
+			</div>
 			</div>
 		</section>
 		<footer>
@@ -106,14 +77,15 @@
 		<script type="text/javascript" src="../scripts/burger.js"></script>
 		<script type="text/javascript" src="../scripts/popup.js"></script>
 		<script type="text/javascript">
-			function opencom(comid) {
-				if (comid == "c1") {
-					$('.'+comid).toggleClass('com-block');
-				}
+			function add(postid) {
+					var name = $('#name').val();
+					var text = $('#text').val();
+					var col = $('#s1').text();
+					col++;
+					$('#s1').text(col);
+				var com = '<div class="comment-block"><img class="img-responsive" src="../assets/if_user-alt_285645.png"><div class="us-name">'+name+'</div><p>'+text+'</p></div>'
 
-				else if (comid == "c2") {
-					$('.'+comid).toggleClass('com-block');
-				}
+    			$('#'+postid).append(com);
 			}
 		</script>
 	</body>
