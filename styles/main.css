@@ -273,6 +273,10 @@ a:hover {
 	height: 363px;
 }
 
+.about-port h3, .about-port a {
+	color: #000;
+}
+
 .about-port-a {
 	float: right;
 	margin-top: 15px;
