@@ -269,8 +269,8 @@ a:hover {
 }
 
 .about-port img {
-	width: 200px;
-	height: 144px;
+	width: 340px;
+	height: 363px;
 }
 
 .about-port-a {
@@ -309,6 +309,10 @@ a:hover {
 .form-cont {
 	max-width: 500px;
 	margin: 0 auto;
+}
+
+.contact {
+	background: #eee;
 }
 
 .form-cont input {

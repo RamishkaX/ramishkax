@@ -11,6 +11,7 @@
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
 		<link rel="stylesheet" type="text/css" href="styles/style-mobile.css">
+		<link rel="stylesheet" type="text/css" href="styles/prettyPhoto.css">
 	</head>
 	<body>
 		<div class="popup">
@@ -40,9 +41,33 @@
 			<h1 class="text-center">Веб-Студия "WWW"</h1>
 			<h3 class="text-center">Что смотришь? Заказывай</h3>
 		</section>
-		<section class="about">
-			<h2 class="text-center">О нас</h2>
-			<p>Профессиональный и ответственный подход к формированию фирменного стиля – наше главное преимущество. Мы отлично понимаем, что это важнейшая составляющая успеха вашей фирмы; поэтому никогда не отступаем, а прорабатываем множество вариантов логотипов, слоганов и стилистических решений. Дизайнеры учтут все тонкости и нюансы; в процессе разработки мы постоянно ведём консультации с заказчиком. Только так можно создать уникальный логотип, привлекательный фирменный дизайн и запоминающийся слоган. Все эти элементы будут отражать специфику вашей компании и соответствовать актуальным тенденциям сферы бизнеса. Окончательный проект логотипа фирменного стиля – это результат работы целой команды специалистов. Профессиональная команда веб-студии "WWW" с удовольствием поможет вам при помощи информационных и визуальных средств подчеркнуть индивидуальность организации, сформировать к ней дружественное отношение, выделить нужные для позиционирования ассоциации.</p>
+		<section class="form">
+			<h2 class="text-center">Наши последние работы</h2>
+			<div class="about-port">
+				<a href="http://www.dioxidtitana.ru/" target="_blank">
+					<div>
+						<img src="assets/doksid.jpg" alt="Компания «Радиан»">
+						<h3>Радиан</h3>
+					</div>
+				</a>
+			</div>
+			<div class="about-port">
+				<a href="http://www.zabtransline.com/" target="_blank">
+					<div>
+						<img src="assets/translayn.jpg" alt="Компания «ГРАДИЕНТ-СПЕЦСИСТЕМЫ»">
+						<h3>TransLine</h3>
+					</div>
+				</a>
+			</div>
+			<div class="about-port">
+				<a href="http://www.s-tt-s.com/" target="_blank" ">
+					<div>
+						<img src="assets/smarttermoelektrik_bol.jpg" alt="Научно-производственная компания «СмарТэрмоэлектрикс»">
+						<h3>СмарТэрмоэлектрикс</h3>
+					</div>
+				</a>
+			</div>
+			<a class="about-port-a" href="pages/portfolio.html" style="float: right;">Все работы</a>
 		</section>
 		<section class="why-we">
 			<h2 class="text-center">Почему мы?</h2>
@@ -117,5 +142,24 @@
 		<script type="text/javascript" src="scripts/jquery-1.10.2.js"></script>
 		<script type="text/javascript" src="scripts/burger.js"></script>
 		<script type="text/javascript" src="scripts/popup.js"></script>
+		<script src="scripts/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript">
+			
+			  $(document).ready(function(){
+			  	var ac = false;
+				$("a[rel^='prettyPhoto']").prettyPhoto();
+				$('.rekviziti').click(function() {
+        			if (!ac) {
+        				$('.rek').addClass("rekact");
+        				ac = true;
+        			}
+        			else {
+        				$('.rek').removeClass("rekact");
+        				ac = false;
+        			}
+    			})
+			  });
+	
+		</script>
 	</body>
 </html>
