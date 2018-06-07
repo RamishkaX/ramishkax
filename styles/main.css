@@ -132,8 +132,9 @@ a:hover {
 }
 
 .logo {
-	width: 90px;
+	width: 120px;
 	float: left;
+	margin-top: 5px;
 }
 
 .list-inline {
@@ -224,7 +225,7 @@ a:hover {
 }
 
 .home-news-block {
-	width: 25%;
+	width: 23%;
 	float: left;
 	padding-left: 15px;
 	padding-right: 15px;
