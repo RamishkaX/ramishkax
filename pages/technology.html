@@ -9,6 +9,7 @@
 		<title>Технологии | Web - студия "WWW"</title>
 		<link id="favicon" rel="shortcut icon" href="../assets/favicon.ico" />
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="../styles/main.css">
 		<link rel="stylesheet" type="text/css" href="../styles/style-mobile.css">
 	</head>
@@ -21,53 +22,88 @@
 				<button type="submit">Отправить</button>
 			</form>
 		</div>
-		<header>
-			<a href="../index.html">
-				<img src="../assets/logo2.png" class="logo img-responsive">
-			</a>
-			<img class="img-responsive burger" src="../assets/if_List_Text_Menu_Numbers_String_Burger_1329080.png">
-			<div class="call-me">Позвоните мне!</div>
-			<ul class="list-inline header-ul">
-				<li><a href="../index.html">Главная</a></li>
-				<li><a href="about.html">О компании</a></li>
-				<li><a href="portfolio.html">Портфолио</a></li>
-				<li class="active"><a href="technology.html">Технологии</a></li>
-				<li><a href="news.html">Новости</a></li>
-			</ul>
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-3 col-xs-7">
+						<a href="../index.html">
+							<img src="../assets/logo2.png" class="logo img-responsive">
+						</a>
+					</div>
+					<img class="img-responsive burger" src="../assets/if_List_Text_Menu_Numbers_String_Burger_1329080.png">
+					<div class="col-md-6 col-sm-7">
+						<ul class="list-inline header-ul">
+							<li><a href="../index.html">Главная</a></li>
+							<li><a href="about.html">О компании</a></li>
+							<li><a href="portfolio.html">Портфолио</a></li>
+							<li class="active"><a href="technology.html">Технологии</a></li>
+							<li><a href="news.html">Новости</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-3">
+						<div class="call-me text-center">Позвоните мне!</div>
+					</div>
+				</div>
+			</div>
 		</header>
-		<section class="command">
-			<h2 class="text-center">Технологии</h2>
-			<div class="tech fc">
-				<img src="../assets/modx.png">
-				<p>Доступны любые варианты дизайна для "натягивания" на систему. При необходимости можно создавать новые шаблоны и применять их в зависимости от типа добавляемого контента.</p>
+		<section class="orange">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<h2 class="text-center">Технологии</h2>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="tech fc">
+							<img src="../assets/modx.png">
+							<p>Доступны любые варианты дизайна для "натягивания" на систему. При необходимости можно создавать новые шаблоны и применять их в зависимости от типа добавляемого контента.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="tech">
+							<img src="../assets/drupal.png">
+							<p>Возможность использования на самых простых хостингах.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="tech">
+							<img src="../assets/wordpress.png">
+							<p>Имеет понятную и простую административную панель.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="tech">
+							<img src="../assets/php.png" style="height: 79px;">
+							<p>Самописный движок на php. Самый бюджетный для вас вариант.</p>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="tech">
-				<img src="../assets/drupal.png">
-				<p>Возможность использования на самых простых хостингах.</p>
-			</div>
-			<div class="tech">
-				<img src="../assets/wordpress.png">
-				<p>Имеет понятную и простую административную панель.</p>
-			</div>
-			<div class="tech">
-				<img src="../assets/php.png" style="height: 79px;">
-				<p>Самописный движок на php. Самый бюджетный для вас вариант.</p>
-			</div>
+			
+			
+			
+			
 		</section>
 		<footer>
-			<ul class="list-inline footer-ul">
-				<li><a href="../index.html">Главная</a></li>
-				<li><a href="about.html">О компании</a></li>
-				<li><a href="portfolio.html">Портфолио</a></li>
-				<li><a href="technology.html">Технологии</a></li>
-				<li><a href="news.html">Новости</a></li>
-			</ul>
-
-			<a href="../index.html"><img src="../assets/logo.png" class="logo img-responsive"></a>
-			<b>WWW 2018</b>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<ul class="list-inline footer-ul">
+							<li><a href="../index.html">Главная</a></li>
+							<li><a href="about.html">О компании</a></li>
+							<li><a href="portfolio.html">Портфолио</a></li>
+							<li><a href="technology.html">Технологии</a></li>
+							<li><a href="news.html">Новости</a></li>
+						</ul>
+					</div>
+					<div class="col-md-12 col-sm-12">
+						<a href="../index.html"><img src="../assets/logo2.png" class="logo img-responsive"></a>
+						<b>WWW 2018</b>
+					</div>
+				</div>
+			</div>
 		</footer>
 		<script type="text/javascript" src="../scripts/jquery-1.10.2.js"></script>
-		<script type="text/javascript" src="../scripts/burger.js"></script>
-		<script type="text/javascript" src="../scripts/popup.js"></script>
+		<script src="../scripts/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript" src="../scripts/main.js"></script>
 	</body>
 </html>

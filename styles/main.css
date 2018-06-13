@@ -6,7 +6,6 @@
 
 body {
 	font-family: 'PT Sans', sans-serif;
-	display: grid;
 }
 
 header, footer, section {
@@ -19,7 +18,7 @@ section {
 }
 
 header {
-	background: #4d4d4d;
+	background: #fff;
 }
 
 h1 {
@@ -27,30 +26,21 @@ h1 {
 }
 
 a:hover {
-	text-decoration: none;
-}
-
-.text-center {
-	text-align: center;
-}
-
-.img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
+	text-decoration: none !important;
 }
 
 .popup {
 	transition: top .3s;
 	position: fixed;
-	top: -150px;
+	top: -225px;
 	width: 400px;
-	padding: 10px;
+	padding: 25px;
 	box-shadow: 0 0 20px 3px rgb(132, 132, 132);
 	background: #fff;
 	left: 0;
 	right: 0;
 	margin: 0 auto;
+	z-index: 2;
 }
 
 .animate {
@@ -58,7 +48,6 @@ a:hover {
 }
 
 .tech {
-	width: 33%;
 	float: left;
 	text-align: center;
 	margin-bottom: 80px;
@@ -74,13 +63,10 @@ a:hover {
 }
 
 .contact a, .contact p {
-	color: #000;
+	color: #fff;
 	font-size: 18px;
 }
 
-.fc {
-	width: 100%;
-}
 
 .rekviziti {
 	text-decoration: underline;
@@ -107,22 +93,25 @@ a:hover {
 }
 
 .popup h3 {
+	margin-top: 0;
 	margin-bottom: 15px;
 }
 
 .popup input {
 	width: 100%;
-	height: 30px;
-	margin-bottom: 10px;
-	border-radius: 9px;
-	box-shadow: 0 0 4px rgb(41, 136, 255);
-	border: 1px solid #9f9f9f;
+	height: 59px;
+	padding: 0 12px;
+	margin-bottom: 16px;
+	border-radius: 5px;
+	/*box-shadow: 0 0 4px rgb(41, 136, 255);*/
+	border: 2px solid #d5d5d5;
 }
 
 .popup button {
 	display: block;
 	margin: 0 auto;
 	padding: 12px;
+	width: 100%;
 	color: #5c5c5c;
 	font-weight: bold;
 	background: #00fff1;
@@ -133,23 +122,10 @@ a:hover {
 
 .logo {
 	width: 120px;
-	float: left;
 	margin-top: 5px;
 }
 
-.list-inline {
-	padding-left: 0;
-	margin-left: -5px;
-	list-style: none;
-}
-
-.list-inline li {
-	display: inline-block;
-	padding-left: 10px;
-}
-
 .header-ul {
-	float: right;
 	margin-top: 32px;
 }
 
@@ -160,19 +136,17 @@ a:hover {
 .header-ul li a {
 	font-size: 20px;
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 }
 
 .header-ul li a:hover {
-	text-decoration: underline;
+	text-decoration: underline !important;
 }
 
 .call-me {
 	transition: .3s;
-    float: right;
     cursor: pointer;
     margin-top: 23px;
-    margin-left: 30px;
     color: #fff;
     background: #8987f5;
     border-radius: 5px;
@@ -216,32 +190,23 @@ a:hover {
 	margin-bottom: 10px;
 }
 
-.why-we, .home-news {
+.white {
 	background: #fff;
 }
 
-.why-we h2, .home-news {
+.white h2 {
+	margin-bottom: 35px;
+	font-weight: bold;
+	text-shadow: 2px 2px #e1e1e1;
+}
+
+.home-news {
 	margin-bottom: 15px;
-}
-
-.home-news-block {
-	width: 23%;
-	float: left;
-	padding-left: 15px;
-	padding-right: 15px;
-	border-right: 1px solid #000;
-}
-
-.home-news-block:first-child {
-	padding-left: 0;
-}
-
-.home-news-block:last-child {
-	border: none;
 }
 
 .home-news-block a {
 	color: #000;
+	text-decoration: underline;
 }
 
 .command {
@@ -258,19 +223,15 @@ a:hover {
 }
 
 .advant {
-	float: left;
-	width: 25%;
-}
-
-.about-port {
-	float: left;
-	width: 33%;
 	text-align: center;
 }
 
-.about-port img {
-	width: 340px;
-	height: 363px;
+.about-port {
+	text-align: center;
+}
+
+.about-port a {
+	text-decoration: underline;
 }
 
 .about-port h3, .about-port a {
@@ -288,7 +249,7 @@ a:hover {
 }
 
 .port {
-	float: left;
+	overflow: hidden;
 	margin-bottom: 20px;
 }
 
@@ -299,15 +260,22 @@ a:hover {
 }
 
 .port a {
-	color: #000;
+	color: #fff;
 }
 
-.form {
-	background: #eee;
+.orange {
+	background: #FFA900;
 }
 
-.form h2 {
-	margin-bottom: 15px;
+.blue {
+	background: #1142AA;
+}
+
+.orange h2, .blue h2 {
+	margin-bottom: 35px;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 2px 2px #69562f;
 }
 
 .form-cont {
@@ -315,17 +283,13 @@ a:hover {
 	margin: 0 auto;
 }
 
-.contact {
-	background: #eee;
-}
-
 .form-cont input {
 	width: 100%;
-	height: 30px;
+	height: 45px;
 	margin-bottom: 10px;
-	border-radius: 9px;
-	box-shadow: 0 0 4px rgb(41, 136, 255);
-	border: 1px solid #9f9f9f;
+	border-radius: 5px;
+	padding: 0 12px;
+	border: 2px solid #d5d5d5;
 }
 
 .form-cont textarea {
@@ -340,7 +304,9 @@ a:hover {
 
 .form-cont button {
 	display: block;
+	width: 100%;
 	margin: 0 auto;
+	margin-bottom: 10px;
 	padding: 12px;
 	color: #5c5c5c;
 	font-weight: bold;
@@ -366,7 +332,7 @@ footer {
 }
 
 .footer-ul li a:hover {
-	text-decoration: underline;
+	text-decoration: underline !important;
 }
 
 footer b {
@@ -383,7 +349,6 @@ footer b {
 }
 
 .news-block {
-	overflow: hidden;
 	padding-bottom: 20px;
 	margin-bottom: 30px;
 }
@@ -450,6 +415,10 @@ footer b {
 	border: 1px solid #9f9f9f;
 }
 
+.dev h3:last-child {
+	font-weight: bold;
+}
+
 .ad-com textarea {
 	resize: none;
 	height: 70px;
@@ -472,6 +441,5 @@ footer b {
 }
 
 .nn {
-	box-shadow: 0 0 5px rgb(228, 228, 228);
 	margin-bottom: 10px;
 }

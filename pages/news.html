@@ -9,6 +9,7 @@
 		<title>Новости | Web - студия "WWW"</title>
 		<link id="favicon" rel="shortcut icon" href="../assets/favicon.ico" />
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="../styles/main.css">
 		<link rel="stylesheet" type="text/css" href="../styles/style-mobile.css">
 	</head>
@@ -21,101 +22,109 @@
 				<button type="submit">Отправить</button>
 			</form>
 		</div>
-		<header>
-			<a href="../index.html">
-				<img src="../assets/logo2.png" class="logo img-responsive">
-			</a>
-			<img class="img-responsive burger" src="../assets/if_List_Text_Menu_Numbers_String_Burger_1329080.png">
-			<div class="call-me">Позвоните мне!</div>
-			<ul class="list-inline header-ul">
-				<li><a href="../index.html">Главная</a></li>
-				<li><a href="about.html">О компании</a></li>
-				<li><a href="portfolio.html">Портфолио</a></li>
-				<li><a href="technology.html">Технологии</a></li>
-				<li class="active"><a href="news.html">Новости</a></li>
-			</ul>
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-3 col-xs-7">
+						<a href="../index.html">
+							<img src="../assets/logo2.png" class="logo img-responsive">
+						</a>
+					</div>
+					<img class="img-responsive burger" src="../assets/if_List_Text_Menu_Numbers_String_Burger_1329080.png">
+					<div class="col-md-6 col-sm-7">
+						<ul class="list-inline header-ul">
+							<li><a href="../index.html">Главная</a></li>
+							<li><a href="about.html">О компании</a></li>
+							<li><a href="portfolio.html">Портфолио</a></li>
+							<li><a href="technology.html">Технологии</a></li>
+							<li class="active"><a href="news.html">Новости</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-3">
+						<div class="call-me text-center">Позвоните мне!</div>
+					</div>
+				</div>
+			</div>
 		</header>
-		<section class="news-section">
-			<h2 class="text-center">Новости</h2>
-			<div class="nn">
-				<div class="news-block" id="n1">
-				<div class="date">10.04.2018</div>
-				<a href="news2.html"><h4>В связи с наступлением весны, всем скидка 15%!</h4></a>
-				<p>Ура, Друзья! Наступила весна! Спешите! Заказав сайт тоолько на этой неделе, вам будет скидка 15%.</p>
-				<div class="news-foot">
-					<div class="comment" onclick="opencom('c1');">Комментарии (<span id="s1">1</span>)</div>
-					<div class="author">Ramin</div>
-				</div>
-				<div class="c1">
-					<div class="comment-block">
-						<img class="img-responsive" src="../assets/if_user-alt_285645.png">
-						<div class="us-name">Матвей Факел</div>
-						<p>Отличная новость! Обожаю вас</p>
+		<section class="orange">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<h2 class="text-center">Новости</h2>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="nn">
+							<div class="news-block" id="n1">
+								<div class="date">10.04.2018</div>
+								<a href="news2.html"><h4>В связи с наступлением весны, всем скидка 15%!</h4></a>
+								<p>Ура, Друзья! Наступила весна! Спешите! Заказав сайт тоолько на этой неделе, вам будет скидка 15%.</p>
+								<div class="news-foot">
+									<div class="comment" onclick="opencom('c1');">Комментарии (<span id="s1">1</span>)</div>
+								</div>
+								<div class="c1">
+									<div class="comment-block">
+										<img class="img-responsive" src="../assets/if_user-alt_285645.png">
+										<div class="us-name">Матвей Факел</div>
+										<p>Отличная новость! Обожаю вас</p>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="nn">
+							<div class="news-block" id="n2">
+								<div class="date">10.04.2018</div>
+								<a href="news1.html"><h4>У нас новый дизайнер!</h4></a>
+								<p>Она удивит вас своим творчеством, мы вам гарантируем. Современные дизайны, красивые подходы к вашим задачам</p>
+								<div class="news-foot">
+									<div class="comment" onclick="opencom('c2');">Комментарии (<span id="s2">1</span>)</div>
+								</div>
+								<div class="c2">
+									<div class="comment-block">
+										<img class="img-responsive" src="../assets/if_user-alt_285645.png">
+										<div class="us-name">Матвей Факел</div>
+										<p>Отличная новость! Дизайнер супер.</p>
+									</div>
+								</div>
+							</div>
+						<!--<div class="ad-com">
+								<div class="ad-tit">Добавить комментарий</div>
+								<form>
+									<input type="text" id="name2" name="name" placeholder="*Имя" required>
+									<textarea name="text" id="text2" placeholder="*Текст" required></textarea>
+									<a href="javascript://" onclick="add('n2');">Отправить</a>
+								</form>
+							</div>-->
+						</div>
 					</div>
 				</div>
-				
 			</div>
-			<!--<div class="ad-com">
-				<div class="ad-tit">Добавить комментарий</div>
-					<form>
-						<input type="text" id="name1" name="name" placeholder="*Имя" required>
-						<textarea name="text" id="text1" placeholder="*Текст" required></textarea>
-						<a href="javascript://" onclick="add('n1');">Отправить</a>
-					</form>
-			</div>-->
-			</div>
-			<div class="nn">
-				<div class="news-block" id="n2">
-				<div class="date">10.04.2018</div>
-				<a href="news1.html"><h4>У нас новый дизайнер!</h4></a>
-				<p>Она удивит вас своим творчеством, мы вам гарантируем. Современные дизайны, красивые подходы к вашим задачам</p>
-				<div class="news-foot">
-					<div class="comment" onclick="opencom('c2');">Комментарии (<span id="s2">1</span>)</div>
-					<div class="author">Ramin</div>
-				</div>
-				<div class="c2">
-					<div class="comment-block">
-						<img class="img-responsive" src="../assets/if_user-alt_285645.png">
-						<div class="us-name">Матвей Факел</div>
-						<p>Отличная новость! Дизайнер супер.</p>
-					</div>
-				</div>
-			</div>
-			<!--<div class="ad-com">
-					<div class="ad-tit">Добавить комментарий</div>
-					<form>
-						<input type="text" id="name2" name="name" placeholder="*Имя" required>
-						<textarea name="text" id="text2" placeholder="*Текст" required></textarea>
-						<a href="javascript://" onclick="add('n2');">Отправить</a>
-					</form>
-				</div>-->
-			</div>
+			
+			
 		</section>
 		<footer>
-			<ul class="list-inline footer-ul">
-				<li><a href="../index.html">Главная</a></li>
-				<li><a href="about.html">О компании</a></li>
-				<li><a href="portfolio.html">Портфолио</a></li>
-				<li><a href="technology.html">Технологии</a></li>
-				<li><a href="news.html">Новости</a></li>
-			</ul>
-
-			<a href="../index.html"><img src="../assets/logo.png" class="logo img-responsive"></a>
-			<b>WWW 2018</b>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<ul class="list-inline footer-ul">
+							<li><a href="../index.html">Главная</a></li>
+							<li><a href="about.html">О компании</a></li>
+							<li><a href="portfolio.html">Портфолио</a></li>
+							<li><a href="technology.html">Технологии</a></li>
+							<li><a href="news.html">Новости</a></li>
+						</ul>
+					</div>
+					<div class="col-md-12 col-sm-12">
+						<a href="../index.html"><img src="../assets/logo2.png" class="logo img-responsive"></a>
+						<b>WWW 2018</b>
+					</div>
+				</div>
+			</div>
 		</footer>
 		<script type="text/javascript" src="../scripts/jquery-1.10.2.js"></script>
-		<script type="text/javascript" src="../scripts/burger.js"></script>
-		<script type="text/javascript" src="../scripts/popup.js"></script>
-		<script type="text/javascript">
-			function opencom(comid) {
-				if (comid == "c1") {
-					$('.'+comid).toggleClass('com-block');
-				}
-
-				else if (comid == "c2") {
-					$('.'+comid).toggleClass('com-block');
-				}
-			}
-		</script>
+		<script src="../scripts/jquery.prettyPhoto.js"></script>
+		<script type="text/javascript" src="../scripts/main.js"></script>
 	</body>
 </html>
