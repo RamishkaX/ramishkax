@@ -6,6 +6,7 @@
 
 body {
 	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
 }
 
 header, footer, section {
@@ -209,6 +210,10 @@ a:hover {
 	text-decoration: underline;
 }
 
+.home-news-block p {
+	font-size: 14px;
+}
+
 .command {
 	background: #fff;
 }
@@ -269,6 +274,10 @@ a:hover {
 
 .blue {
 	background: #1142AA;
+}
+
+.blue p {
+	color: #fff;
 }
 
 .orange h2, .blue h2 {
