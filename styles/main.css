@@ -50,7 +50,7 @@ a:hover {
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	z-index: 2;
+	z-index: 6;
 }
 
 .animate {
@@ -122,11 +122,11 @@ a:hover {
 	margin: 0 auto;
 	padding: 12px;
 	width: 100%;
-	color: #5c5c5c;
-	font-weight: bold;
-	background: #00fff1;
+	color: #fff;
+	background: #4573D5;
 	border: none;
-	border-radius: 20px;
+	border-radius: 5px;
+	font-size: 19px;
 	cursor: pointer;
 }
 
@@ -259,7 +259,7 @@ a:hover {
 	padding: 10px;
 	color: #fff;
 	background: #4573D5;
-	font-weight: bold;
+	border-radius: 5px;
 }
 
 .about-port-a:hover {
@@ -280,6 +280,7 @@ a:hover {
 
 .port a {
 	color: #fff;
+	text-decoration: underline;
 }
 
 .orange {
@@ -332,10 +333,10 @@ a:hover {
 	margin-bottom: 10px;
 	padding: 12px;
 	color: #5c5c5c;
-	font-weight: bold;
+	font-size: 19px;
 	background: #ffcb2b;
 	border: none;
-	border-radius: 20px;
+	border-radius: 5px;
 	cursor: pointer;
 }
 
@@ -392,7 +393,8 @@ footer b {
 }
 
 .news-block a {
-	color: #fff;
+	color: #000;
+	text-decoration: underline;
 }
 
 .news-block p {
@@ -406,6 +408,7 @@ footer b {
 .comment {
 	float: left;
 	cursor: pointer;
+	font-size: 14px;
 }
 
 .author {
