@@ -1,20 +1,3 @@
-    function add(postid) {
-        if(postid == 'n1') {
-            var col = $('#s1').text();
-            col++;
-            $('#s1').text(col);
-        }
-        else {
-            var col = $('#s2').text();
-            col++;
-            $('#s2').text(col);
-        }
-        var name = $('#name').val();
-        var text = $('#text').val();
-        var com = '<div class="comment-block"><img class="img-responsive" src="../assets/if_user-alt_285645.png"><div class="us-name">'+name+'</div><p>'+text+'</p></div>'
-        $('#'+postid).append(com);
-    }
-
 $(document).ready(function(){
   	var ac = false;
 	$("a[rel^='prettyPhoto']").prettyPhoto();
