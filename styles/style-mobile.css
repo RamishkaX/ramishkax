@@ -81,4 +81,8 @@
 	.header-ul-block {
 		display: block;
 	}
+
+	.call-me {
+		display: none;
+	}
 }
